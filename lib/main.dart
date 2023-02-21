@@ -23,14 +23,51 @@ class MyApp extends StatelessWidget {
         title: Text('EVAX'),
         backgroundColor: Colors.red,
       ),
-      body: Container(
-        constraints: BoxConstraints.expand(),
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("images/back2.jpeg"),
-              fit: BoxFit.cover),
-        ),
+      body: Center(
+        child: Container(
+          padding:  EdgeInsets.all(8.0),
+          constraints: BoxConstraints.expand(),
+          decoration:  BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("images/back2.jpeg"),
+                fit: BoxFit.cover),
+          ),
+          child:  Column(
+            children: [
+              Text(
+                'BIENVENUE AU PORTAIL DE VACCINATION CONTRE LA COVID 19',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red,fontSize: 20.0),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> inscrir()
+                  ));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.red,
+                  ),
+
+                  margin: EdgeInsets.only(bottom: 15, top: 25),
+                  width: 350.0,
+                  height: 50.0,
+                  child: Center(
+                    child: Text(
+                      'Inscrivez-vous à la campagne de vaccination',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+
     ),
+      ),
 
 
       drawer: Drawer(    //menu
