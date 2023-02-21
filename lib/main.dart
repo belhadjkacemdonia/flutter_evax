@@ -23,6 +23,16 @@ class MyApp extends StatelessWidget {
         title: Text('EVAX'),
         backgroundColor: Colors.red,
       ),
+      body: Container(
+        constraints: BoxConstraints.expand(),
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("images/back2.jpeg"),
+              fit: BoxFit.cover),
+        ),
+    ),
+
+
       drawer: Drawer(    //menu
         child: ListView(
           children: <Widget>[
@@ -46,7 +56,7 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 )),
-            CustomListTile(Icons.home,'Acceuil',()=> {Navigator.push(context, MaterialPageRoute(builder: (context)=> acceuil()
+            CustomListTile(Icons.home,'Acceuil',()=> {Navigator.push(context, MaterialPageRoute(builder: (context)=> MyApp()
             ))
             }),
             CustomListTile(Icons.login,'S"inscrire',()=>{ Navigator.push(context, MaterialPageRoute(builder: (context)=> inscrir()
