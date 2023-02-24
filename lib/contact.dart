@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
 class contact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text("Contacter_nous"),
           backgroundColor: Colors.red,),
-
-        body: MyCardWidget(),
+      drawer: Mydrawer(),
+      body: MyCardWidget(),
     );
   }
 }

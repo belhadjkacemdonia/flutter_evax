@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
 
 class citoyen_sans_cin extends StatelessWidget{
   @override
@@ -8,7 +10,8 @@ class citoyen_sans_cin extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title: Text("citoyen_sans_cin"),
         backgroundColor: Colors.red,),
-        body: citoyen_sanscin()
+      drawer: Mydrawer(),
+        body: citoyen_sanscin(),
 
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
 
 class citoyen_cin extends StatelessWidget{
   @override
@@ -8,7 +10,8 @@ class citoyen_cin extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title: Text("Insert avec cin"),
         backgroundColor: Colors.red,),
-        body: citoyen_avec_cin()
+      drawer: Mydrawer(),
+        body: citoyen_avec_cin(),
 
     );
   }

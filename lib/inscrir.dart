@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'citoyen_cin.dart';
 import 'citoyen_etranger.dart';
 import 'citoyen_sans_cin.dart';
+import 'drawer.dart';
 
 class inscrir extends StatelessWidget{
   @override
@@ -11,6 +12,7 @@ class inscrir extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title: Text("Inscription"),
         backgroundColor: Colors.red,),
+      drawer: Mydrawer(),
       body: Padding(
 
         padding: const EdgeInsets.all(8.0),

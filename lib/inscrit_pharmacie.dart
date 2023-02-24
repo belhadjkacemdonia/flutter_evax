@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
 
 class inscrit_pharmacie extends StatelessWidget{
   @override
@@ -8,6 +10,7 @@ class inscrit_pharmacie extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(title: Text("inscription pharmacie"),
       backgroundColor: Colors.red,),
+        drawer: Mydrawer(),
     body: _inscritpharmacie()
 
     );
