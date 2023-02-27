@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'CustomListTile.dart';
+import 'gallery.dart';
 import 'acceuil.dart';
 import 'contact.dart';
 import 'espace_citoyen.dart';
@@ -51,6 +52,8 @@ class _MydrawerState extends State<Mydrawer> {
           CustomListTile(Icons.local_pharmacy,'Inscription pharmacie',()=>{Navigator.push(context, MaterialPageRoute(builder: (context)=> inscrit_pharmacie()
           ))}),
           CustomListTile(Icons.person,'Espace Citoyen',()=>{Navigator.push(context, MaterialPageRoute(builder: (context)=> citoyen()
+          ))}),
+          CustomListTile(Icons.image,'Gallery ',()=>{Navigator.push(context, MaterialPageRoute(builder: (context)=> gallery()
           ))}),
         ],
       ),
