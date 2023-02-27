@@ -23,6 +23,7 @@ class inscrir extends StatelessWidget{
                 style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red,fontSize: 20.0),
               ),
 
+
               GestureDetector(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> citoyen_cin()

@@ -12,7 +12,6 @@ class citoyen_cin extends StatelessWidget{
         backgroundColor: Colors.red,),
       drawer: Mydrawer(),
         body: citoyen_avec_cin(),
-
     );
   }
 }
@@ -63,8 +62,6 @@ class citoyen_avec_cin extends StatelessWidget{
                       child: Text('Confirmer',
                           style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white)),
                       color: Colors.red,
-
-
                     ),
                   ),
                ],

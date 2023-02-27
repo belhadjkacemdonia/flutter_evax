@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'drawer.dart';
-
 
 class citoyen_etranger extends StatelessWidget{
   @override
